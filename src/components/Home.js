@@ -44,7 +44,7 @@ export default function Home() {
 
                 </div>
 
-                <a href='#updates' className="py-8 flex flex-col items-center justify-center gap-y-5 font-montserrat hover:text-seagreen-200">
+                <a href='#updates' className="py-8 flex z-20 flex-col items-center justify-center gap-y-5 font-montserrat hover:text-seagreen-200">
                     <p className="text-lg">
                         Scroll Down
                     </p>
@@ -62,7 +62,7 @@ export default function Home() {
 
             {/* brand section */}
 
-            <div className="lg:py-20 py-8 flex flex-wrap items-center justify-center gap-6">
+            <div className="lg:my-20 my-8 flex flex-wrap items-center justify-center gap-6">
                 <img src={b_5} alt="" />
                 <img src={b_1} alt="" />
                 <img src={b_2} alt="" />
@@ -310,6 +310,10 @@ export default function Home() {
                         Roadmap
                         <img src={vector} alt="" className='flex mx-auto pt-2' />
                     </h2>
+
+                    <div className="border border-bottom border-seagreen-200 border-dashed">
+
+                    </div>
 
                     <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center lg:gap-16 gap-8 lg:pt-20 py-6">
 

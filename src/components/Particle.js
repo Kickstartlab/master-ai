@@ -21,7 +21,10 @@ function CameraControls() {
             args={[camera, domElement]}
             autoRotate
             autoRotateSpeed={-0.2}
+            enableZoom={false}
         />
+
+        
     );
 }
 
@@ -101,8 +104,8 @@ function Points() {
 function AnimationCanvas() {
     return (
         <Canvas
-            colormanagement={false}
             camera={{ position: [100, 10, 0], fov: 75 }}
+            
         >
             <Suspense fallback={null}>
                 <Points />
