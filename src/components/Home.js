@@ -15,6 +15,8 @@ import project from '../assets/project.png';
 import circle from '../assets/circle.png';
 import circle_1 from '../assets/circle_1.png';
 import shibai from '../assets/shibai.png';
+import vector from '../assets/vector.svg';
+import token from '../assets/token.png';
 
 
 
@@ -74,10 +76,16 @@ export default function Home() {
 
             <div id='updates' className="">
 
-                <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
-                    <div className="flex flex-col items-center justify-center">
+                <div className="lg:pb-20 py-5 lg:px-20 px-5 container mx-auto">
 
-                        <h2 className='md:text-4xl text-center text-2xl font-montserrat font-bold text-white-100'>
+                    <div className="flex flex-col items-center justify-center">
+                        <p className="py-8 font-montserrat text-white-50 lg:w-8/12 w-full text-center">
+                            Why choose Us?
+                            <span>
+                                <img src={vector} alt="" className='flex mx-auto pt-2' />
+                            </span>
+                        </p>
+                        <h2 className='md:text-5xl text-center text-2xl font-montserrat font-bold text-white-100'>
                             Lorem Impsum dollar here
                         </h2>
                         <p className="py-6 font-montserrat text-white-50 lg:w-8/12 w-full text-center">
@@ -159,7 +167,7 @@ export default function Home() {
                 <div className="lg:flex lg:p-12 p-6 items-center gap-32 bg-about">
 
                     <div className='lg:pl-12 pl-0'>
-                        <h2 className='md:text-4xl text-5xl font-montserrat font-bold text-white-100'>
+                        <h2 className='md:text-5xl text-5xl font-montserrat font-bold text-white-100'>
                             About us
                         </h2>
                         <p className="py-6 font-montserrat text-white-50 lg:w-8/12 w-full">
@@ -240,15 +248,52 @@ export default function Home() {
                 </div>
             </div>
 
+            <div className="circle absolute right-0 -mt-20 lg:block hidden">
+                <img src={circle_1} alt="" className='' />
+            </div>
+
             {/* tokenomics */}
+
+
+            <div className="circle absolute left-0 -mt-20 lg:block hidden">
+                <img src={circle} alt="" className='' />
+            </div>
 
             <div id='tokenomics' className="">
 
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
                     <div className="text-center">
-                        <h2 className='md:text-4xl text-2xl font-montserrat font-bold text-white-100'>
+                        <h2 className='md:text-5xl text-2xl font-montserrat font-bold text-white-100'>
                             Tokenomics
+                            <span>
+                                <img src={vector} alt="" className='flex mx-auto pt-2' />
+                            </span>
                         </h2>
+                    </div>
+
+                    <div className="lg:flex items-center justify-center gap-12 mt-12">
+                        <div>
+                            <img src={token} alt="" className='' />
+                        </div>
+                        <div>
+                            <h2 className='md:text-4xl mb-5 text-2xl font-montserrat font-bold text-white-100'>
+                                Tokenomics
+                            </h2>
+                            <ul className='flex flex-col text-2xl font-semibold'>
+                                <li>
+                                    70% Public
+                                </li>
+                                <li>
+                                    10% Community Fund
+                                </li>
+                                <li>
+                                    10% Team
+                                </li>
+                                <li>
+                                    10% Investors
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -258,33 +303,131 @@ export default function Home() {
             <div id='roadmap' className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto text-white-100">
 
                 <div className="text-center">
-                    <h2 className='md:text-4xl text-2xl font-montserrat font-bold text-white-100'>
+                    <h2 className='md:text-5xl text-2xl font-montserrat font-bold text-white-100'>
                         Roadmap
+                        <img src={vector} alt="" className='flex mx-auto pt-2' />
                     </h2>
 
+                    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center gap-16 lg:pt-20 py-6">
+
+                        <div className="bg-white-100 p-6 rounded-2xl text-black-100 text-left">
+                            <h6 className='text-lg mb-5 font-medium font-montserrat'>
+                                AI DOGE PHASE I
+                            </h6>
+                            <ul className='flex flex-col font-semibold'>
+                                <li>
+                                    ORAKOM
+                                </li>
+
+                                <li>
+                                    ORAKOM
+                                </li>
+
+                                <li>
+                                    ORAKOM
+                                </li>
+                                <li>
+                                    ORAKOM
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div className="bg-white-100 p-6 rounded-2xl text-black-100 text-left">
+                            <h6 className='text-lg mb-5 font-medium font-montserrat'>
+                                AI DOGE PHASE II
+                            </h6>
+                            <ul className='flex flex-col font-semibold'>
+                                <li>
+                                    ORAKOM
+                                </li>
+
+                                <li>
+                                    ORAKOM
+                                </li>
+
+                                <li>
+                                    ORAKOM
+                                </li>
+                                <li>
+                                    ORAKOM
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div className="bg-white-100 p-6 rounded-2xl text-black-100 text-left">
+                            <h6 className='text-lg mb-5 font-medium font-montserrat'>
+                                AI DOGE PHASE III
+                            </h6>
+                            <ul className='flex flex-col font-semibold'>
+                                <li>
+                                    ORAKOM
+                                </li>
+
+                                <li>
+                                    ORAKOM
+                                </li>
+
+                                <li>
+                                    ORAKOM
+                                </li>
+                                <li>
+                                    ORAKOM
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div className="bg-white-100 p-6 rounded-2xl text-black-100 text-left">
+                            <h6 className='text-lg mb-5 font-medium font-montserrat'>
+                                AI DOGE PHASE IV
+                            </h6>
+                            <ul className='flex flex-col font-semibold'>
+                                <li>
+                                    ORAKOM
+                                </li>
+
+                                <li>
+                                    ORAKOM
+                                </li>
+
+                                <li>
+                                    ORAKOM
+                                </li>
+                                <li>
+                                    ORAKOM
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
 
             {/* upper foot section */}
 
-            <div id='contract' className="lg:py-20 py-5 container mx-auto">
-                <div className="flex flex-col items-center lg:px-20 px-5 justify-cente gap-y-8 text-center lg:py-20 py-6 bg-blue-50">
+            <div className="bg-blue-50 lg:my-20 my-5 ">
+                <div id='contract' className="container mx-auto">
+                    <div className="flex flex-col items-center lg:px-20 px-5 justify-cente gap-y-8 text-center lg:py-20 py-6">
 
-                    <p className="font-montserrat">
-                        Rhoncus, accumsan dictum
-                    </p>
+                        <p className="font-montserrat">
+                            Rhoncus, accumsan dictum
+                        </p>
 
-                    <h2 className='md:text-4xl text-2xl font-montserrat font-bold lg:w-8/12 w-full'>
-                        Etiam nulla lectus amet nunc molestie at vulputate.
-                    </h2>
+                        <h2 className='md:text-5xl text-2xl font-montserrat font-bold lg:w-8/12 w-full'>
+                            Etiam nulla lectus amet nunc molestie at vulputate.
+                        </h2>
 
-                    <p className="font-montserrat">
-                        Rhoncus, accumsan dictum
-                    </p>
+                        <p className="font-montserrat">
+                            Rhoncus, accumsan dictum
+                        </p>
+
+                    </div>
 
                 </div>
-
             </div>
 
             <Footer />
