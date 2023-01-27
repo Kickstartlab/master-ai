@@ -27,11 +27,8 @@
 
 @media only screen and (max-width: 768px) {
 
-  /* .bg-blue {
-    background-image: url(../src/assets/top.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh;
-  } */
+.anim {
+  display: none;
+}
 
 }
