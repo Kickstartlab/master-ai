@@ -12,11 +12,12 @@ import choose_3 from '../assets/choose_3.png';
 import choose_4 from '../assets/choose_4.png';
 import about from '../assets/about.png';
 import project from '../assets/project.png';
-import circle from '../assets/circle.png';
+import circle_2 from '../assets/circle_2.png';
 import circle_1 from '../assets/circle_1.png';
 import shibai from '../assets/shibai.png';
 import vector from '../assets/vector.svg';
 import token from '../assets/token.png';
+import Particle from './Particle';
 
 
 
@@ -27,11 +28,12 @@ export default function Home() {
 
             {/* top section */}
 
-            <div className="bg-blue">
+            <div className="">
 
-                <div className="lg:px-8 md:px-5 container mx-auto">
+                <div className="lg:px-8 md:px-5 container mx-auto relative z-20">
                     <Menu />
 
+                    <Particle />
                     <div className="flex flex-col items-center justify-center py-20">
                         <img src={shibai} alt="" className='w-8/12' />
 
@@ -55,7 +57,7 @@ export default function Home() {
             </div>
 
             <div className="circle absolute left-0 top-20 lg:block hidden">
-                <img src={circle} alt="" className='' />
+                <img src={circle_2} alt="" className='' />
             </div>
 
             {/* brand section */}
@@ -182,7 +184,7 @@ export default function Home() {
                         </a>
                     </div>
 
-                    <img src={about} alt="" className='lg:mt-0 mt-6'/>
+                    <img src={about} alt="" className='lg:mt-0 mt-6' />
 
                 </div>
 
@@ -190,11 +192,13 @@ export default function Home() {
 
             {/* project section */}
 
-            <div className="bg-line">
+            <div className="bg-line relative z-20">
+                <Particle />
+
                 <div className="lg:py-12 py-5 lg:px-20 px-5 container mx-auto bg-project">
 
                     <div className="lg:flex justify-between items-center">
-                        <div className="bg-white-100 p-6 rounded-2xl">
+                        <div className="bg-white-100 p-6 rounded-2xl transform duration-300 hover:-translate-y-8">
 
                             <div className="">
 
@@ -219,7 +223,7 @@ export default function Home() {
 
                         </div>
 
-                        <div className="bg-white-100 p-6 rounded-2xl lg:mt-80 mt-6">
+                        <div className="bg-white-100 p-6 rounded-2xl lg:mt-80 mt-6 transform duration-500 hover:-translate-y-8">
 
                             <div className="">
 
@@ -255,7 +259,7 @@ export default function Home() {
             {/* tokenomics */}
 
             <div className="circle absolute left-0 mt-44 lg:block hidden">
-                <img src={circle} alt="" className='' />
+                <img src={circle_2} alt="" className='' />
             </div>
 
             <div id='tokenomics' className="">

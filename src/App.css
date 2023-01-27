@@ -8,17 +8,11 @@
   border-radius: 69px;
 }
 
-.bg-blue {
-  background-image: url(../src/assets/top.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
-
-.bg-project {
-  background-image: url(../src/assets/bg-project.png);
-  background-position: center bottom;
-  background-repeat: no-repeat;
+.anim {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
 }
 
 .bg-line {
@@ -27,7 +21,7 @@
   background-repeat: no-repeat;
 }
 
-.btn-shadow{
+.btn-shadow {
   box-shadow: 0px 17px 41px -2px rgba(13, 41, 134, 0.69);
 }
 
