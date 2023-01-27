@@ -310,10 +310,10 @@ export default function Home() {
                         Roadmap
                         <img src={vector} alt="" className='flex mx-auto pt-2' />
                     </h2>
-
+{/* 
                     <div className="border border-bottom border-seagreen-200 border-dashed">
 
-                    </div>
+                    </div> */}
 
                     <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center lg:gap-16 gap-8 lg:pt-20 py-6">
 
