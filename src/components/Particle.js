@@ -22,6 +22,7 @@ function CameraControls() {
             autoRotate
             autoRotateSpeed={-0.2}
             enableZoom={false}
+            enabled ={false}
         />
 
         
