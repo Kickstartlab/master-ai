@@ -182,7 +182,7 @@ export default function Home() {
                         </a>
                     </div>
 
-                    <img src={about} alt="" />
+                    <img src={about} alt="" className='lg:mt-0 mt-6'/>
 
                 </div>
 
@@ -248,14 +248,13 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="circle absolute right-0 -mt-20 lg:block hidden">
+            <div className="circle absolute right-0 -mt-44 lg:block hidden">
                 <img src={circle_1} alt="" className='' />
             </div>
 
             {/* tokenomics */}
 
-
-            <div className="circle absolute left-0 -mt-20 lg:block hidden">
+            <div className="circle absolute left-0 mt-44 lg:block hidden">
                 <img src={circle} alt="" className='' />
             </div>
 
@@ -275,7 +274,7 @@ export default function Home() {
                         <div>
                             <img src={token} alt="" className='' />
                         </div>
-                        <div>
+                        <div className=' lg:mt-0 mt-6'>
                             <h2 className='md:text-4xl mb-5 text-2xl font-montserrat font-bold text-white-100'>
                                 Tokenomics
                             </h2>
@@ -308,7 +307,7 @@ export default function Home() {
                         <img src={vector} alt="" className='flex mx-auto pt-2' />
                     </h2>
 
-                    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center gap-16 lg:pt-20 py-6">
+                    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center lg:gap-16 gap-8 lg:pt-20 py-6">
 
                         <div className="bg-white-100 p-6 rounded-2xl text-black-100 text-left">
                             <h6 className='text-lg mb-5 font-medium font-montserrat'>
@@ -409,7 +408,7 @@ export default function Home() {
 
             {/* upper foot section */}
 
-            <div className="bg-blue-50 lg:my-20 my-5 ">
+            <div className="bg-blue-50 lg:mb-20 mb-5 ">
                 <div id='contract' className="container mx-auto">
                     <div className="flex flex-col items-center lg:px-20 px-5 justify-cente gap-y-8 text-center lg:py-20 py-6">
 
