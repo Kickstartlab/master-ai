@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+.font-clash {
+  font-family: 'Clash Grotesk', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-about {
+  background: linear-gradient(107.33deg, #142D8E -2.93%, #0182AA 101.45%);
+  box-shadow: 0px 66px 175px -58px #0182AA;
+  border-radius: 69px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-blue {
+  background-image: url(../src/assets/top.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-project {
+  background-image: url(../src/assets/bg-project.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-line {
+  background-image: url(../src/assets/bg-line.png);
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-shadow{
+  box-shadow: 0px 17px 41px -2px rgba(13, 41, 134, 0.69);
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* .bg-blue {
+    background-image: url(../src/assets/top.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+  } */
+
 }
