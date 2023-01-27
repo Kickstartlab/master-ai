@@ -314,9 +314,15 @@ export default function Home() {
                     <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center lg:gap-16 gap-8 lg:pt-20 py-6">
 
                         <div className="bg-white-100 p-6 rounded-2xl text-black-100 text-left">
-                            <h6 className='text-lg mb-5 font-medium font-montserrat'>
+                            <h6 className='text-lg font-medium font-montserrat'>
                                 AI DOGE PHASE I
                             </h6>
+                            
+                            <div className="py-5">
+                                <div className="w-8 h-8 border-2 border-seagreen-200 rounded-full">
+
+                                </div>
+                            </div>
                             <ul className='flex flex-col font-semibold'>
                                 <li>
                                     ORAKOM
@@ -337,9 +343,14 @@ export default function Home() {
                         </div>
 
                         <div className="bg-white-100 p-6 rounded-2xl text-black-100 text-left">
-                            <h6 className='text-lg mb-5 font-medium font-montserrat'>
+                            <h6 className='text-lg font-medium font-montserrat'>
                                 AI DOGE PHASE II
                             </h6>
+                            <div className="py-5">
+                                <div className="w-8 h-8 border-2 border-seagreen-200 rounded-full">
+
+                                </div>
+                            </div>
                             <ul className='flex flex-col font-semibold'>
                                 <li>
                                     ORAKOM
@@ -360,9 +371,15 @@ export default function Home() {
                         </div>
 
                         <div className="bg-white-100 p-6 rounded-2xl text-black-100 text-left">
-                            <h6 className='text-lg mb-5 font-medium font-montserrat'>
+                            <h6 className='text-lg font-medium font-montserrat'>
                                 AI DOGE PHASE III
                             </h6>
+                            
+                            <div className="py-5">
+                                <div className="w-8 h-8 border-2 border-seagreen-200 rounded-full">
+
+                                </div>
+                            </div>
                             <ul className='flex flex-col font-semibold'>
                                 <li>
                                     ORAKOM
@@ -383,9 +400,15 @@ export default function Home() {
                         </div>
 
                         <div className="bg-white-100 p-6 rounded-2xl text-black-100 text-left">
-                            <h6 className='text-lg mb-5 font-medium font-montserrat'>
+                            <h6 className='text-lg font-medium font-montserrat'>
                                 AI DOGE PHASE IV
                             </h6>
+                            
+                            <div className="py-5">
+                                <div className="w-8 h-8 border-2 border-seagreen-200 rounded-full">
+
+                                </div>
+                            </div>
                             <ul className='flex flex-col font-semibold'>
                                 <li>
                                     ORAKOM
