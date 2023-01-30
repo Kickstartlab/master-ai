@@ -58,23 +58,31 @@ line {
   fill: none;
   stroke: #20F8FD;
   stroke-width: 20;
-  stroke-dasharray: 400;
+  stroke-dasharray: 157;
   animation: dash 4s infinite;
 }
 
-@keyframes dash {
-  0% {
-    stroke-dasharray: 0 400
-  }
+.crc2 {
+  fill: none;
+  stroke: #F5167E;
+  stroke-width: 20;
+  stroke-dasharray: 78.5;
+  animation: dash_1 4s infinite;
+  animation-delay: 4s;
+}
 
-  50% {
-    stroke-dasharray: 200 200;
-    stroke: #F5167E;
-  }
 
-  100% {
-    stroke-dasharray: 400 400
-  }
+.crc1 {
+  animation: spinning-circle 10s infinite;
+}
+
+@keyframes spinning-circle {
+  0%,3%    {transform: rotate(0)}
+  22%,27%  {transform: rotate(-90deg)}
+  47%,52%  {transform: rotate(-180deg)}
+  72%,77%  {transform: rotate(-270deg)}
+  98%,100% {transform: rotate(-360deg)}
+  
 }
 
 @media only screen and (max-width: 768px) {

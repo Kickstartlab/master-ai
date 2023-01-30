@@ -15,6 +15,7 @@ import circle_2 from '../assets/circle_2.png';
 import circle_1 from '../assets/circle_1.png';
 import shibai from '../assets/shibai.png';
 import vector from '../assets/vector.svg';
+import token from '../assets/token.png';
 import Particle from './Particle';
 
 
@@ -255,12 +256,16 @@ export default function Home() {
                     <div className="lg:flex items-center justify-center gap-20 mt-12">
                         <div className='lg:w-1/2'>
 
-                            <svg xmlnsSvg="http://www.w3.org/2000/svg" xmlnsDoc="http://www.w3.org/1999/xlink"
+                            {/* <svg xmlns="http://www.w3.org/2000/svg"
                                 width="300px" height="400px" viewBox="0 0 130 130" >
 
-                                <circle class="crc1" transform="rotate(-90 70 70)" cx="70" cy="70" r="50"> </circle>
+                                <circle className="crc1" transform="rotate(-90 70 70)" cx="70" cy="70" r="50"> </circle>
+                                <circle className="crc2" transform="rotate(-45 70 70)" cx="70" cy="70" r="50"> </circle>
+                                <circle className="crc3" transform="rotate(45 70 70)" cx="70" cy="70" r="50"> </circle>
 
-                            </svg>
+                            </svg> */}
+
+                            <img src={token} alt="" className='crc1'/>
 
                         </div>
                         <div className='lg:w-1/2 lg:mt-0 mt-6'>
