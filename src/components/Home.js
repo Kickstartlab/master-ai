@@ -3,7 +3,6 @@ import Footer from './Footer'
 import Menu from './Menu'
 import b_1 from '../assets/b-1.png';
 import b_2 from '../assets/b-2.png';
-import b_3 from '../assets/b-3.png';
 import b_4 from '../assets/b-4.png';
 import b_5 from '../assets/b-5.png';
 import choose_1 from '../assets/choose_1.png';
@@ -16,12 +15,7 @@ import circle_2 from '../assets/circle_2.png';
 import circle_1 from '../assets/circle_1.png';
 import shibai from '../assets/shibai.png';
 import vector from '../assets/vector.svg';
-import line_1 from '../assets/line_1.png';
-import s_1 from '../assets/s-1.png';
-import s_2 from '../assets/s-2.png';
-import s_3 from '../assets/s-3.png';
 import Particle from './Particle';
-import Circle from './Circle';
 
 
 
@@ -259,10 +253,15 @@ export default function Home() {
                     </div>
 
                     <div className="lg:flex items-center justify-center gap-20 mt-12">
-                        <div className='lg:w-1/2 flex'>
-                            {/* <img src={s_1} alt="" className='absolute left-50' />
-                            <img src={s_2} alt="" className='absolute' />
-                            <img src={s_3} alt="" className='absolute' /> */}
+                        <div className='lg:w-1/2'>
+
+                            <svg xmlnsSvg="http://www.w3.org/2000/svg" xmlnsDoc="http://www.w3.org/1999/xlink"
+                                width="300px" height="400px" viewBox="0 0 130 130" >
+
+                                <circle class="crc1" transform="rotate(-90 70 70)" cx="70" cy="70" r="50"> </circle>
+
+                            </svg>
+
                         </div>
                         <div className='lg:w-1/2 lg:mt-0 mt-6'>
                             <h2 className='md:text-4xl mb-5 text-2xl font-montserrat font-bold text-white-100'>
