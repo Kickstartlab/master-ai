@@ -16,8 +16,12 @@ import circle_2 from '../assets/circle_2.png';
 import circle_1 from '../assets/circle_1.png';
 import shibai from '../assets/shibai.png';
 import vector from '../assets/vector.svg';
-import token from '../assets/token.png';
+import line_1 from '../assets/line_1.png';
+import s_1 from '../assets/s-1.png';
+import s_2 from '../assets/s-2.png';
+import s_3 from '../assets/s-3.png';
 import Particle from './Particle';
+import Circle from './Circle';
 
 
 
@@ -38,14 +42,14 @@ export default function Home() {
                         <img src={shibai} alt="" className='w-8/12' />
 
                         <p className="text-lg mt-8 lg:w-1/2 text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis..
+                            SHIBAI is an ERC 20 🔹 meme token  with a major artificial intelligence utility behind it , and with a based and hardworking team , SHIBAI has the potential to be the 2023 moonshot
                         </p>
                     </div>
 
                 </div>
 
-                <a href='#updates' className="py-8 flex z-20 flex-col items-center justify-center gap-y-5 font-montserrat hover:text-seagreen-200">
-                    <p className="text-lg">
+                <a href='#updates' className="py-8 flex flex-col items-center justify-center font-montserrat hover:text-seagreen-200">
+                    <p className="text-lg pb-5">
                         Scroll Down
                     </p>
                     <span className="animate-bounce">
@@ -65,9 +69,8 @@ export default function Home() {
             <div className="lg:my-20 my-8 flex flex-wrap items-center justify-center gap-6">
                 <img src={b_5} alt="" />
                 <img src={b_1} alt="" />
-                <img src={b_2} alt="" />
-                <img src={b_3} alt="" />
                 <img src={b_4} alt="" />
+                <img src={b_2} alt="" />
             </div>
 
             {/* Why choose us */}
@@ -88,11 +91,10 @@ export default function Home() {
                             </span>
                         </p>
                         <h2 className='md:text-5xl text-center text-2xl font-montserrat font-bold text-white-100'>
-                            Lorem Impsum dollar here
+                            WE ALL KNOW HOW MUCH HYPED AI TOKENS ARE
                         </h2>
                         <p className="py-6 font-montserrat text-white-50 lg:w-8/12 w-full text-center">
-
-                            Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed. Tincidunt porttitor eget et adipiscing sagittis diam. Vitae sed nam vulputate bibendum ornare vitae. Scelerisque sit sed.
+                            WE ALL KNOW HOW MUCH HYPED AI TOKENS ARE , AND WHEN IT COMES TO CRYPTO NOTHING IS LIKE MEME COINS AND ESPECIALLY EVERYONE'S FAVOURITE TOKEN SHIBA , MIX THEM BOTH TOGETHER AND U GET THE MOST HYPED & BULLISH NAME EVER
                         </p>
 
                         <div className="lg:flex block items-baseline py-5 justify-center gap-16 lg:w-8/12">
@@ -103,12 +105,12 @@ export default function Home() {
                                     <img src={choose_1} alt="" />
                                     <div>
                                         <h4 className="text-white-100 text-xl pb-5 font-semibold">
-                                            Lorem Ipsum
+                                            Shibarium bridge
                                         </h4>
                                         <p className='font-poppins text-white-50'>
-                                            Lorem Ipsum is simply dummy
-                                            text of the printing and
-                                            typesetting industry.
+                                            Shiba Ai will be going to be
+                                            first project with shibarium
+                                            to Erc-20 bridge
                                         </p>
                                     </div>
                                 </div>
@@ -116,12 +118,12 @@ export default function Home() {
                                     <img src={choose_2} alt="" />
                                     <div>
                                         <h4 className="text-white-100 text-xl pb-5 font-semibold">
-                                            Lorem Ipsum
+                                            Rennouced CA
                                         </h4>
                                         <p className='font-poppins text-white-50'>
-                                            Lorem Ipsum is simply dummy
-                                            text of the printing and
-                                            typesetting industry.
+                                            Shiba Ai is going to be true example of DEFI.
+                                            We are going to renounce ownership right
+                                            after deployment
                                         </p>
                                     </div>
                                 </div>
@@ -132,12 +134,12 @@ export default function Home() {
                                     <img src={choose_3} alt="" />
                                     <div>
                                         <h4 className="text-white-100 text-xl pb-5 font-semibold">
-                                            Lorem Ipsum
+                                            Burned Lp
                                         </h4>
                                         <p className='font-poppins text-white-50'>
-                                            Lorem Ipsum is simply dummy
-                                            text of the printing and
-                                            typesetting industry.
+                                            Shiba Ai is going to burn
+                                            liquidity to gain more
+                                            community trust.
                                         </p>
                                     </div>
                                 </div>
@@ -145,12 +147,10 @@ export default function Home() {
                                     <img src={choose_4} alt="" />
                                     <div>
                                         <h4 className="text-white-100 text-xl pb-5 font-semibold">
-                                            Lorem Ipsum
+                                            AI Utilty
                                         </h4>
                                         <p className='font-poppins text-white-50'>
-                                            Lorem Ipsum is simply dummy
-                                            text of the printing and
-                                            typesetting industry.
+                                            Shiba Ai team is going to surprise the community with AI Utility. Will be revealed in Phase II
                                         </p>
                                     </div>
                                 </div>
@@ -174,8 +174,11 @@ export default function Home() {
                         </h2>
                         <p className="py-6 font-montserrat text-white-50 lg:w-8/12 w-full">
 
-                            Lorem ipsum dolor sit amet consectetur. Ac pellentesque velit ullamcorper nulla odio massa. Viverra dignissim ac vitae interdum consequat elementum sed. Tincidunt porttitor eget et adipiscing sagittis diam. Vitae sed nam vulputate bibendum ornare vitae. Scelerisque sit sed.
+                            Shiba AI (SHIBAAI) is the fusion of everyone's favourite meme coin, Shiba Inu, and cutting-edge Artificial Intelligence technology. With a dedicated and experienced team behind it, SHIBAAI has the potential to be the next big thing in the crypto space.
                         </p>
+
+                        <p>   Follow us on Telegram, Twitter, and visit our website for the latest updates and developments.</p>
+
                         <a href="/">
                             <button className="text-white-100 bg-seagreen-50 flex gap-2 items-center py-3 lg:px-8 px-4 rounded-full font-semibold mt-5">
                                 learn more
@@ -197,50 +200,31 @@ export default function Home() {
 
                 <div className="lg:py-12 py-5 lg:px-20 px-5 container mx-auto bg-project">
 
-                    <div className="lg:flex justify-between items-center">
-                        <div className="bg-white-100 p-6 rounded-2xl transform duration-300 hover:-translate-y-8">
+                    <div className="lg:flex justify-center items-center">
+                        <div className="bg-white-100 p-6 rounded-2xl transform duration-300 hover:-translate-y-8 border-b-8 border-seagreen-50 lg:w-1/2">
 
                             <div className="">
 
                                 <img src={project} alt="" className='flex mx-auto' />
 
                                 <div className='text-black-50 pt-5 flex flex-col items-center justify-center gap-y-5'>
-                                    <h2 className='text-2xl font-montserrat font-semibold'>
-                                        Project 1
-                                    </h2>
-                                    <p className="font-montserrat text-center lg:w-8/12 w-full">
-
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    <p className="font-montserrat text-center">
+                                        To maximise the potential of SHIBA Al, the team
+                                        has implemented a LP burn mechanism, as well
+                                        as 5% allocation for green and 5% for red. Join us
+                                        on our journey to the moon and be a part of the
+                                        next big thing in crypto. $SHIBAI can be
+                                        purchased on Uniswap, and can be tracked on
+                                        DEXscreener, DEXTools and other major
+                                        tracking platforms.
                                     </p>
                                     <a href="/">
                                         <button className="text-white-100 bg-seagreen-200 hover:bg-white-100 hover:text-seagreen-200 btn-shadow flex gap-2 items-center py-3 lg:px-8 px-4 rounded-full font-semibold">
                                             learn more
-                                            <span><svg width="12" height="13" viewBox="0 0 12 13" className="mt-1" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 1.5C2 0.947715 2.44772 0.5 3 0.5L11 0.500001C11.5523 0.500001 12 0.947716 12 1.5V9.5C12 10.0523 11.5523 10.5 11 10.5C10.4477 10.5 10 10.0523 10 9.5V3.91421L1.70711 12.2071C1.31658 12.5976 0.683417 12.5976 0.292893 12.2071C-0.0976311 11.8166 -0.0976311 11.1834 0.292893 10.7929L8.58579 2.5L3 2.5C2.44772 2.5 2 2.05228 2 1.5Z" fill="white"></path></svg></span>
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div className="bg-white-100 p-6 rounded-2xl lg:mt-80 mt-6 transform duration-500 hover:-translate-y-8">
-
-                            <div className="">
-
-                                <img src={project} alt="" className='flex mx-auto' />
-
-                                <div className='text-black-50 pt-5 flex flex-col items-center justify-center gap-y-5'>
-                                    <h2 className='text-2xl font-montserrat font-semibold'>
-                                        Project 2
-                                    </h2>
-                                    <p className="font-montserrat text-center lg:w-8/12 w-full">
-
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </p>
-                                    <a href="/">
-                                        <button className="text-white-100 bg-seagreen-200 hover:bg-white-100 hover:text-seagreen-200 btn-shadow flex gap-2 items-center py-3 lg:px-8 px-4 rounded-full font-semibold">
-                                            learn more
-                                            <span><svg width="12" height="13" viewBox="0 0 12 13" className="mt-1" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 1.5C2 0.947715 2.44772 0.5 3 0.5L11 0.500001C11.5523 0.500001 12 0.947716 12 1.5V9.5C12 10.0523 11.5523 10.5 11 10.5C10.4477 10.5 10 10.0523 10 9.5V3.91421L1.70711 12.2071C1.31658 12.5976 0.683417 12.5976 0.292893 12.2071C-0.0976311 11.8166 -0.0976311 11.1834 0.292893 10.7929L8.58579 2.5L3 2.5C2.44772 2.5 2 2.05228 2 1.5Z" fill="white"></path></svg></span>
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 font-semibold">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                                            </svg>
+                                            </span>
                                         </button>
                                     </a>
                                 </div>
@@ -274,32 +258,32 @@ export default function Home() {
                         </h2>
                     </div>
 
-                    <div className="lg:flex items-center justify-center gap-12 mt-12">
-                        <div>
-                            <img src={token} alt="" className='' />
+                    <div className="lg:flex items-center justify-center gap-20 mt-12">
+                        <div className='lg:w-1/2 flex'>
+                            {/* <img src={s_1} alt="" className='absolute left-50' />
+                            <img src={s_2} alt="" className='absolute' />
+                            <img src={s_3} alt="" className='absolute' /> */}
                         </div>
-                        <div className=' lg:mt-0 mt-6'>
+                        <div className='lg:w-1/2 lg:mt-0 mt-6'>
                             <h2 className='md:text-4xl mb-5 text-2xl font-montserrat font-bold text-white-100'>
                                 Tokenomics
                             </h2>
                             <ul className='flex flex-col text-2xl font-semibold'>
                                 <li>
-                                    70% Public
+                                    5/5 Tax
                                 </li>
                                 <li>
-                                    10% Community Fund
+                                    2% LP
                                 </li>
                                 <li>
-                                    10% Team
-                                </li>
-                                <li>
-                                    10% Investors
+                                    3% Marketing
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             {/* roadmap */}
 
@@ -310,123 +294,134 @@ export default function Home() {
                         Roadmap
                         <img src={vector} alt="" className='flex mx-auto pt-2' />
                     </h2>
-{/* 
-                    <div className="border border-bottom border-seagreen-200 border-dashed">
 
-                    </div> */}
-
-                    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center lg:gap-16 gap-8 lg:pt-20 py-6">
+                    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-baseline lg:gap-16 gap-8 lg:pt-20 py-6">
 
                         <div className="bg-white-100 p-6 rounded-2xl text-black-100 text-left">
                             <h6 className='text-lg font-medium font-montserrat'>
-                                AI DOGE PHASE I
+                                SHIBA AI PHASE I
                             </h6>
-                            
-                            <div className="py-5">
-                                <div className="w-8 h-8 border-2 border-seagreen-200 rounded-full">
+
+                            <div className="py-5 flex items-center gap-5">
+                                <div className="w-8 h-8 border-4 border-seagreen-200 rounded-full">
 
                                 </div>
+
+                                <div className='absolute ml-12'>
+                                    <svg className='path svg lg:block hidden'>
+                                        <line x1="0" y1="30" x2="500" y2="30" stroke-color="" />
+                                    </svg>
+                                </div>
                             </div>
-                            <ul className='flex flex-col font-semibold'>
+                            <ul className='flex flex-col font-semibold text-sm'>
                                 <li>
-                                    ORAKOM
+                                    Deploy contract
                                 </li>
 
                                 <li>
-                                    ORAKOM
+                                    Shiba Ai  Listing
                                 </li>
 
                                 <li>
-                                    ORAKOM
+                                    Twitter+Website creation
                                 </li>
                                 <li>
-                                    ORAKOM
+                                    Initial Telegram marketing
                                 </li>
 
                             </ul>
                         </div>
 
-                        <div className="bg-white-100 p-6 rounded-2xl text-black-100 text-left">
+                        <div className="bg-white-100 p-6 rounded-2xl text-black-100 text-left z-20">
                             <h6 className='text-lg font-medium font-montserrat'>
-                                AI DOGE PHASE II
+                                SHIBA AI PHASE II
                             </h6>
-                            <div className="py-5">
-                                <div className="w-8 h-8 border-2 border-seagreen-200 rounded-full">
+                            <div className="py-5 flex items-center gap-5">
+                                <div className="w-8 h-8 border-4 border-seagreen-200 rounded-full">
 
                                 </div>
+
+                                <div className='absolute ml-12'>
+                                    <svg className='path svg lg:block hidden'>
+                                        <line x1="0" y1="30" x2="500" y2="30" stroke-color="#f8a100" />
+                                    </svg>
+                                </div>
                             </div>
-                            <ul className='flex flex-col font-semibold'>
+                            <ul className='flex flex-col font-semibold text-sm'>
                                 <li>
-                                    ORAKOM
+                                    Lp burn
                                 </li>
 
                                 <li>
-                                    ORAKOM
+                                    Twitter influencer partnerships
                                 </li>
 
                                 <li>
-                                    ORAKOM
+                                    CA renounce
                                 </li>
                                 <li>
-                                    ORAKOM
+                                    Community buy competitions
                                 </li>
 
                             </ul>
                         </div>
 
-                        <div className="bg-white-100 p-6 rounded-2xl text-black-100 text-left">
+                        <div className="bg-white-100 p-6 rounded-2xl text-black-100 text-left z-20">
                             <h6 className='text-lg font-medium font-montserrat'>
-                                AI DOGE PHASE III
+                                SHIBA AI PHASE III
                             </h6>
-                            
-                            <div className="py-5">
-                                <div className="w-8 h-8 border-2 border-seagreen-200 rounded-full">
+
+                            <div className="py-5 flex items-center gap-5">
+                                <div className="w-8 h-8 border-4 border-seagreen-200 rounded-full">
 
                                 </div>
+
+                                <div className='absolute ml-12'>
+                                    <svg className='path svg lg:block hidden'>
+                                        <line x1="0" y1="30" x2="500" y2="30" stroke-color="#f8a100" />
+                                    </svg>
+                                </div>
                             </div>
-                            <ul className='flex flex-col font-semibold'>
+                            <ul className='flex flex-col font-semibold text-sm'>
                                 <li>
-                                    ORAKOM
+                                    Shiba Ai  partnership
                                 </li>
 
                                 <li>
-                                    ORAKOM
+                                    Shiberium Bridge
                                 </li>
 
                                 <li>
-                                    ORAKOM
+                                    Youtube marketing
                                 </li>
                                 <li>
-                                    ORAKOM
+                                    AMAs
                                 </li>
 
                             </ul>
                         </div>
 
-                        <div className="bg-white-100 p-6 rounded-2xl text-black-100 text-left">
+                        <div className="bg-white-100 p-6 rounded-2xl text-black-100 text-left z-20">
                             <h6 className='text-lg font-medium font-montserrat'>
-                                AI DOGE PHASE IV
+                                SHIBA AI PHASE IV
                             </h6>
-                            
+
                             <div className="py-5">
-                                <div className="w-8 h-8 border-2 border-seagreen-200 rounded-full">
+                                <div className="w-8 h-8 border-4 border-seagreen-200 rounded-full">
 
                                 </div>
                             </div>
-                            <ul className='flex flex-col font-semibold'>
+                            <ul className='flex flex-col font-semibold text-sm'>
                                 <li>
-                                    ORAKOM
+                                    Buybacks
                                 </li>
 
                                 <li>
-                                    ORAKOM
+                                    Application for CoinMarketcap and CoinGecko
                                 </li>
 
                                 <li>
-                                    ORAKOM
-                                </li>
-                                <li>
-                                    ORAKOM
+                                    Secret AI Utility
                                 </li>
 
                             </ul>
@@ -443,17 +438,9 @@ export default function Home() {
                 <div id='contract' className="container mx-auto">
                     <div className="flex flex-col items-center lg:px-20 px-5 justify-cente gap-y-8 text-center lg:py-20 py-6">
 
-                        <p className="font-montserrat">
-                            Rhoncus, accumsan dictum
-                        </p>
-
-                        <h2 className='md:text-5xl text-2xl font-montserrat font-bold lg:w-8/12 w-full'>
-                            Etiam nulla lectus amet nunc molestie at vulputate.
+                        <h2 className='md:text-5xl text-2xl font-montserrat font-bold lg:w-9/12 w-full'>
+                            Experience  moonshot of 2023 with Shiba Ai on ERC-20
                         </h2>
-
-                        <p className="font-montserrat">
-                            Rhoncus, accumsan dictum
-                        </p>
 
                     </div>
 

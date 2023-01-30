@@ -25,13 +25,41 @@
   box-shadow: 0px 17px 41px -2px rgba(13, 41, 134, 0.69);
 }
 
-@media only screen and (max-width: 768px) {
-  
-.anim {
-  width: 100%;
-  height: 60vh;
-  position: absolute;
-  z-index: -1;
+line {
+  /* stroke: linear-gradient(270deg, #0182AA 0%, #20F8FD 100%); */
+  stroke: #20F8FD;
+  stroke-dasharray: 12;
 }
+
+.svg {
+  fill: #333;
+  stroke-width: 5px;
+  margin-top: 90px;
+  z-index: -20;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 12s linear infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 550;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .anim {
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    z-index: -1;
+  }
 
 }
