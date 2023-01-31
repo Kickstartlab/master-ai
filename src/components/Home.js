@@ -16,7 +16,6 @@ import circle_1 from '../assets/circle_1.png';
 import shibai from '../assets/shibai.png';
 import vector from '../assets/vector.svg';
 import token from '../assets/token.png';
-import Particle from './Particle';
 
 
 
@@ -27,14 +26,13 @@ export default function Home() {
 
             {/* top section */}
 
-            <div className="">
+            <div className="bg-top">
 
                 <div className="lg:px-8 md:px-5 container mx-auto relative z-20">
                     <Menu />
 
-                    <Particle />
                     <div className="flex flex-col items-center justify-center py-20">
-                        <img src={shibai} alt="" className='w-8/12' />
+                        <img src={shibai} alt="" className='' />
 
                         <p className="text-lg mt-8 lg:w-1/2 text-center">
                             SHIBAI is an ERC 20 🔹 meme token  with a major artificial intelligence utility behind it , and with a based and hardworking team , SHIBAI has the potential to be the 2023 moonshot

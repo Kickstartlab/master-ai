@@ -27,8 +27,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      'montserrat': ["'Montserrat', sans-serif"],
-      // 'clash': ["'Clash Display', sans-serif"]
+      'poppins': ["'Poppins', sans-serif;"],
+      'inter': ["'Inter', sans-serif;"]
     }
   },
   plugins: [],
