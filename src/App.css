@@ -15,6 +15,31 @@
   z-index: -1;
 }
 
+.bg-gradient {
+  background: linear-gradient(153.06deg, #13B8BA -0.31%, #6A0A6B 99.69%);
+}
+
+.bg-blue-100 {
+  background: linear-gradient(0deg, rgba(8, 12, 26, 0.6), rgba(8, 12, 26, 0.6)), #0C1426;
+}
+
+.bg-blue-50 {
+  background: linear-gradient(180deg, rgba(19, 25, 33, 0) 70.35%, #060E11 100%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.border-gradient {
+  border-image-source: linear-gradient(153.06deg, #13B8BA -0.31%, #6A0A6B 99.69%);
+  border-image-slice: 1;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: initial;
+}
+
+.transform {
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
 
 .bg-top {
   background-image: url(../src/assets/bg-top.png);
@@ -84,12 +109,32 @@ line {
 }
 
 @keyframes spinning-circle {
-  0%,3%    {transform: rotate(0)}
-  22%,27%  {transform: rotate(-90deg)}
-  47%,52%  {transform: rotate(-180deg)}
-  72%,77%  {transform: rotate(-270deg)}
-  98%,100% {transform: rotate(-360deg)}
-  
+
+  0%,
+  3% {
+    transform: rotate(0)
+  }
+
+  22%,
+  27% {
+    transform: rotate(-90deg)
+  }
+
+  47%,
+  52% {
+    transform: rotate(-180deg)
+  }
+
+  72%,
+  77% {
+    transform: rotate(-270deg)
+  }
+
+  98%,
+  100% {
+    transform: rotate(-360deg)
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
