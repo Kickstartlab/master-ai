@@ -31,10 +31,10 @@
 .border-gradient {
   border-image-source: linear-gradient(153.06deg, #13B8BA -0.31%, #6A0A6B 99.69%);
   border-image-slice: 1;
-  border-radius: 10px;
-  border-style: solid;
+  border-radius: 20px;
   border-width: 2px;
   box-sizing: initial;
+  background-origin: border-box;
 }
 
 .transform {
@@ -45,16 +45,6 @@
   background-image: url(../src/assets/bg-top.png);
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.bg-line {
-  background-image: url(../src/assets/bg-line.png);
-  background-position: top;
-  background-repeat: no-repeat;
-}
-
-.btn-shadow {
-  box-shadow: 0px 17px 41px -2px rgba(13, 41, 134, 0.69);
 }
 
 line {
@@ -84,57 +74,6 @@ line {
   to {
     stroke-dashoffset: 0;
   }
-}
-
-.crc1 {
-  fill: none;
-  stroke: #20F8FD;
-  stroke-width: 20;
-  stroke-dasharray: 157;
-  animation: dash 4s infinite;
-}
-
-.crc2 {
-  fill: none;
-  stroke: #F5167E;
-  stroke-width: 20;
-  stroke-dasharray: 78.5;
-  animation: dash_1 4s infinite;
-  animation-delay: 4s;
-}
-
-
-.crc1 {
-  animation: spinning-circle 10s infinite;
-}
-
-@keyframes spinning-circle {
-
-  0%,
-  3% {
-    transform: rotate(0)
-  }
-
-  22%,
-  27% {
-    transform: rotate(-90deg)
-  }
-
-  47%,
-  52% {
-    transform: rotate(-180deg)
-  }
-
-  72%,
-  77% {
-    transform: rotate(-270deg)
-  }
-
-  98%,
-  100% {
-    transform: rotate(-360deg)
-  }
-
 }
 
 @media only screen and (max-width: 768px) {

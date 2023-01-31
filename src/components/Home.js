@@ -17,10 +17,33 @@ import b_6 from '../assets/b_6.png';
 import about from '../assets/about.png';
 import shibai from '../assets/shibai.png';
 import roadmap from '../assets/roadmap.png';
+import Accordion from './Accordion';
 
 
 
 export default function Home() {
+
+    const accordionData = [
+        {
+            title: 'What  can I use to purchase?',
+            content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
+            laborum cupiditate possimus labore, hic temporibus velit dicta earum
+            suscipit commodi eum enim atque at? Et perspiciatis dolore iure
+            voluptatem.`
+        },
+        {
+            title: 'What is Master Ai',
+            content: `Master Ai is a project on the ERC chain. As the name suggests the team at Master Ai is working to make MSAI the master of every Ai project. Creating an ecosystem of Ai bots, 1 bot launching every week and all having different applications. Every bot will be monetized with ads with the revenue going into the MSAI Token`
+        },
+        {
+            title: 'How can I gain access? ',
+            content: `Master Ai is a project on the ERC chain. As the name suggests the team at Master Ai is working to make MSAI the master of every Ai project. Creating an ecosystem of Ai bots, 1 bot launching every week and all having different applications. Every bot will be monetized with ads with the revenue going into the MSAI Token`
+        },
+        {
+            title: 'How do I benefit from it?',
+            content: `Master Ai is a project on the ERC chain. As the name suggests the team at Master Ai is working to make MSAI the master of every Ai project. Creating an ecosystem of Ai bots, 1 bot launching every week and all having different applications. Every bot will be monetized with ads with the revenue going into the MSAI Token`
+        }
+    ];
 
     return (
         <div className="bg-blue-100 text-white-100 font-poppins">
@@ -232,7 +255,7 @@ export default function Home() {
 
             {/* tokenomics */}
 
-            <div id='#tokenomics' className="">
+            <div id='tokenomics' className="">
 
                 <div className="lg:py-12 py-5 lg:px-20 px-5 container mx-auto bg-project">
 
@@ -249,7 +272,7 @@ export default function Home() {
                             <div className="">
 
                                 <h2 className='md:text-4xl mb-6 text-center text-2xl font-poppins font-bold text-white-100'>
-                                    Tokenomics
+                                    Distribution
                                 </h2>
 
                                 <img src={about} alt="" className='flex mx-auto' />
@@ -400,7 +423,7 @@ export default function Home() {
 
             {/* faq section */}
 
-            <div id='faq' className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto text-white-100">
+            <div id='faqs' className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto text-white-100">
 
                 <h2 className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
                     Have any Question?
@@ -410,7 +433,11 @@ export default function Home() {
                 </p>
 
                 <div className="py-8">
-                    <img src={roadmap} alt="" className='flex mx-auto' />
+                    <div className="accordion space-y-5">
+                        {accordionData.map(({ title, content }) => (
+                            <Accordion title={title} content={content} />
+                        ))}
+                    </div>
                 </div>
 
             </div>

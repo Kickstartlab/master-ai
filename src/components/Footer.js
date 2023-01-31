@@ -8,15 +8,21 @@ import logo from '../assets/logo.png';
 
 export default function Footer() {
   return (
-    <div className="bg-blue-200 font-clash py-8">
+    <div className="bg-gray-100 font-inter py-5">
       <footer data-aos="zoom-in" className='container text-white-100 mx-auto lg:px-12 font-poppins px-5'>
         <div className="lg:flex items-baseline justify-between font-poppins py-8">
           <div className="flex flex-col gap-y-6">
 
             <a href="/" className="">
               <img src={logo} alt="Logo" />
+
+              <h2 className='md:text-4xl text-2xl font-poppins font-bold text-white-100'>
+                Master Ai
+              </h2>
             </a>
-            <p className='text-white-50 lg:w-1/3'>SHIBA AI is an ERC-20 meme token that combines the excitement of meme culture with the power of AI. The team behind $SHIBAI is highly skilled, consisting of renowned CA and a talented group of developers and advisors.</p>
+            <p className='text-gray-50 lg:w-1/3'>
+              We are always open and we welcome and questions you have for our team. If you wish to get in touch, please fill out the form below. Someone from our team will get back to you shortly
+            </p>
             <div className="flex gap-6 pb-5">
 
               <a href="/">
@@ -50,7 +56,8 @@ export default function Footer() {
 
         </div>
 
-        <p>{new Date().getFullYear()} © Shibai. All rights reserved.</p>
+        <hr className=''/>
+        <p className='pt-5'>{new Date().getFullYear()} © Master-Ai. All rights reserved.</p>
 
       </footer>
     </div>
