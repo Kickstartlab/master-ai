@@ -10,7 +10,8 @@ export default function Footer() {
   return (
     <div className="bg-gray-100 font-inter py-5">
       <footer data-aos="zoom-in" className='container text-white-100 mx-auto lg:px-12 font-poppins px-5'>
-        <div className="lg:flex items-baseline justify-between font-poppins py-8">
+        <div className="lg:flex items-center justify-between font-poppins py-8">
+
           <div className="flex flex-col gap-y-6">
 
             <a href="/" className="">
@@ -40,23 +41,45 @@ export default function Footer() {
           </div>
 
           <div className="">
-            <h4 className="text-white-100 hover:text-seagreen-50 text-xl pb-5 w-32 font-semibold tracking-wide">
-              Site Map
-            </h4>
-            <ul>
-              <a href="/"><li className='pb-3'>Home</li></a>
-              <a href="#about"><li className='pb-3'>About</li></a>
-              <a href="#tokenomics"><li className='pb-3'>Tokenomics</li></a>
-              <a href="#partners"><li className='pb-3'>Partners</li></a>
-              <a href="#roadmap"><li className='pb-3'>Roadmap</li></a>
-              <a href=""><li className='pb-3'>Whitepaper</li></a>
-              <a href="#contact"><li className='pb-3'>Contact</li></a>
-            </ul>
+            <div className="sm:flex block items-center gap-x-6">
+
+              <div className="">
+                <div className="mb-3">
+                  <label for="f-name" className="text-white-100 font-poppins text-xl font-semibold">
+                    Your Name
+                  </label>
+                </div>
+                <input type="text" placeholder="Type your name here" id="name" required="" className="p-3 border-2 border-seagreen-200 rounded-md w-full bg-gray-100 ring-0" />
+              </div>
+
+              <div className="w-full sm:mt-0 mt-5">
+                <div className="mb-3">
+                  <label for="date" className="text-white-100 font-poppins text-xl font-semibold">
+                    Your Email
+                  </label>
+                </div>
+                <input type="email" placeholder="Type your email here" id="email" required="" className="p-3 border-2 border-seagreen-200 rounded-md w-full bg-gray-100 ring-0" />
+              </div>
+
+            </div>
+
+            <div className="mt-5">
+              <div className="mb-3">
+                <label for="message" className="text-white-100 font-poppins text-xl font-semibold">
+                  Your Message
+                </label>
+              </div>
+              <textarea rows='5' placeholder="Leave your question or comment here" id="message" required="" className="p-3 border-2 border-seagreen-200 rounded-md bg-gray-100 w-full" />
+            </div>
+
+            <button type='submit' className="rounded-md lg:w-64 bg-gradient text-white-100 font-semibold px-3 py-3 mt-6">
+              SUBMIT YOUR MESSAGE
+            </button>
           </div>
 
         </div>
 
-        <hr className=''/>
+        <hr className='' />
         <p className='pt-5'>{new Date().getFullYear()} © Master-Ai. All rights reserved.</p>
 
       </footer>

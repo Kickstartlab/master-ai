@@ -6,7 +6,7 @@ module.exports = {
     colors: {
       seagreen: {
         "50": "#32B6EA",
-        "200": "#0182AA",
+        "200": "#2E72D2",
       },
       black: {
         "50": "#252525",
@@ -27,8 +27,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      'poppins': ["'Poppins', sans-serif;"],
-      'inter': ["'Inter', sans-serif;"]
+      'poppins': ["'Poppins', sans-serif"],
+      'inter': ["'Inter', sans-serif"]
     }
   },
   plugins: [],

@@ -57,7 +57,7 @@ export default function Menu() {
       </div>
 
       {
-        show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto text-center font-montserrat font-semibold bg-seagreen-200 z-20" style={{ left: "0" }}>
+        show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto text-center font-montserrat font-semibold bg-blue-100 z-20" style={{ left: "0" }}>
 
           <div className="mt-3 px-3 mb-12">
             <a href="/" className="text-white-100">
@@ -65,19 +65,22 @@ export default function Menu() {
             </a>
           </div>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-            <a href="/" className="text-lg ml-4 hover:text-purple-100 font-semibold">Home</a>
-          </button>
-          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-            <a href="#updates" className="text-lg ml-4 hover:text-purple-100 font-semibold">Updates</a>
-          </button>
-          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-            <a href="#services" className="text-lg ml-4 hover:text-purple-100 font-semibold">Services</a>
+            <a href="#about" className="text-lg ml-4 hover:text-purple-100 font-semibold">About</a>
           </button>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
             <a href="#features" className="text-lg ml-4 hover:text-purple-100 font-semibold">Features</a>
           </button>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-            <a href="#about" className="text-lg ml-4 hover:text-purple-100 font-semibold">About Us</a>
+            <a href="#roadmap" className="text-lg ml-4 hover:text-purple-100 font-semibold">Roadmap</a>
+          </button>
+          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
+            <a href="#tokenomics" className="text-lg ml-4 hover:text-purple-100 font-semibold">Tokenomics</a>
+          </button>
+          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
+            <a href="#faqs" className="text-lg ml-4 hover:text-purple-100 font-semibold">FAQ's</a>
+          </button>
+          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
+            <a href="/" className="text-lg ml-4 hover:text-purple-100 font-semibold">Contact</a>
           </button>
         </div> : null
       }
