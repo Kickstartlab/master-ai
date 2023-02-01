@@ -18,6 +18,7 @@ import about from '../assets/about.png';
 import shibai from '../assets/shibai.png';
 import roadmap from '../assets/roadmap.png';
 import Accordion from './Accordion';
+import Typed from "react-typed";
 
 
 
@@ -59,7 +60,14 @@ export default function Home() {
                         <img src={shibai} alt="" className='' />
 
                         <h2 className='md:text-5xl text-center text-2xl lg:w-9/12 py-6 font-poppins font-bold text-white-100'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            <Typed
+                                strings={[
+                                    ' Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                                ]}
+                                typeSpeed={80}
+                                cursorChar={''}
+                                loop
+                            />
                         </h2>
 
                         <p className="text-lg mt-8 lg:w-1/2 text-white-50 text-center font-inter">
@@ -85,7 +93,14 @@ export default function Home() {
                     <div className="flex flex-col items-center justify-center pt-12">
 
                         <h2 className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
-                            What is Master AI?
+                            <Typed
+                                strings={[
+                                    '  What is Master AI?'
+                                ]}
+                                typeSpeed={100}
+                                cursorChar={''}
+                                // loop
+                            />
                         </h2>
                         <p className="py-6 font-inter text-gray-50 lg:w-8/12 w-full text-center">
                             Master Ai is a project on the ERC chain. As the name suggests the team at Master Ai is working to make MSAI the master of every Ai project. Creating an ecosystem of Ai bots, 1 bot launching every week and all having different applications. Every bot will be monetized with ads with the revenue going into the MSAI Token
@@ -149,7 +164,14 @@ export default function Home() {
                     <div className="flex flex-col items-center justify-center pt-12 transform">
 
                         <h2 className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
-                            Why choose our Token?
+                            <Typed
+                                strings={[
+                                    'Why choose our Token?'
+                                ]}
+                                typeSpeed={80}
+                                cursorChar={''}
+                                loop
+                            />
                         </h2>
                         <p className="py-6 font-inter text-gray-50 text-center">
                             The world first platform to reward investors and traders build on ICO.
@@ -260,19 +282,33 @@ export default function Home() {
                 <div className="lg:py-12 py-5 lg:px-20 px-5 container mx-auto bg-project">
 
                     <h2 className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
-                        Tokenomics
+                        <Typed
+                            strings={[
+                                'Tokenomics'
+                            ]}
+                            typeSpeed={80}
+                            cursorChar={''}
+                            loop
+                        />
                     </h2>
                     <p className="py-6 font-inter text-gray-50 text-center">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elitL
                     </p>
 
                     <div className="lg:flex justify-center items-center mt-6">
-                        <div className="bg-gray-100 p-6 border-gradient rounded-2xl border-b-8 border-seagreen-50 lg:w-1/2">
+                        <div className="bg-gray-100 p-6  rounded-2xl lg:w-1/2">
 
                             <div className="">
 
                                 <h2 className='md:text-4xl mb-6 text-center text-2xl font-poppins font-bold text-white-100'>
-                                    Distribution
+                                    <Typed
+                                        strings={[
+                                            'Distribution'
+                                        ]}
+                                        typeSpeed={80}
+                                        cursorChar={''}
+                                        loop
+                                    />
                                 </h2>
 
                                 <img src={about} alt="" className='flex mx-auto' />
@@ -381,7 +417,14 @@ export default function Home() {
             <div id='roadmap' className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto text-white-100">
 
                 <h2 className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
-                    Road map
+                    <Typed
+                        strings={[
+                            'Road map'
+                        ]}
+                        typeSpeed={80}
+                        cursorChar={''}
+                        loop
+                    />
                 </h2>
                 <p className="py-6 font-inter text-gray-50 text-center">
                     Lorem ipsum lorem upsul
@@ -396,11 +439,18 @@ export default function Home() {
             {/* partners */}
 
             <div id='partners' className="">
-                <div className="container mx-auto bg-gray-100 border-gradient">
+                <div className="container mx-auto bg-gray-100 rounded-2xl">
                     <div className="flex flex-col items-center lg:px-12 px-6 justify-cente gap-y-8 text-center lg:py-16 py-6">
 
                         <h2 className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
-                            Strategic Partners
+                            <Typed
+                                strings={[
+                                    'Strategic Partners'
+                                ]}
+                                typeSpeed={80}
+                                cursorChar={''}
+                                loop
+                            />
                         </h2>
                         <p className="py-5 font-inter lg:w-1/2 text-gray-50 text-center">
                             Join the industry leaders to discuss where the markets are heading. We accept token payments.
@@ -426,7 +476,14 @@ export default function Home() {
             <div id='faqs' className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto text-white-100">
 
                 <h2 className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
-                    Have any Question?
+                    <Typed
+                        strings={[
+                            'Have any Question?'
+                        ]}
+                        typeSpeed={80}
+                        cursorChar={''}
+                        loop
+                    />
                 </h2>
                 <p className="py-6 font-inter text-gray-50 text-center">
                     Join the industry leaders to discuss where the markets are heading. We accept token payments.

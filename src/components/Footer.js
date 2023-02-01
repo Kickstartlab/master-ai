@@ -14,7 +14,7 @@ export default function Footer() {
 
           <div className="flex flex-col gap-y-6">
 
-            <a href="/" className="">
+            <a href="/" className="space-y-3">
               <img src={logo} alt="Logo" />
 
               <h2 className='md:text-4xl text-2xl font-poppins font-bold text-white-100'>
@@ -49,7 +49,7 @@ export default function Footer() {
                     Your Name
                   </label>
                 </div>
-                <input type="text" placeholder="Type your name here" id="name" required="" className="p-3 border-2 border-seagreen-200 rounded-md w-full bg-gray-100 ring-0" />
+                <input type="text" placeholder="Type your name here" id="name" required="" className="p-3 border-2 border-seagreen-200 rounded-md bg-gray-100 ring-0" />
               </div>
 
               <div className="w-full sm:mt-0 mt-5">
@@ -58,7 +58,7 @@ export default function Footer() {
                     Your Email
                   </label>
                 </div>
-                <input type="email" placeholder="Type your email here" id="email" required="" className="p-3 border-2 border-seagreen-200 rounded-md w-full bg-gray-100 ring-0" />
+                <input type="email" placeholder="Type your email here" id="email" required="" className="p-3 border-2 border-seagreen-200 rounded-md bg-gray-100 ring-0" />
               </div>
 
             </div>

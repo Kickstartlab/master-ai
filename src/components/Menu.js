@@ -42,7 +42,7 @@ export default function Menu() {
         </div>
       </div>
 
-      <div className="lg:hidden flex items-center justify-between pt-5 font-montserrat">
+      <div className="lg:hidden flex items-center justify-between py-6 font-montserrat">
         <a href="/" className="text-white-100">
           <img src={logo} alt="Logo" />
         </a>
@@ -65,22 +65,22 @@ export default function Menu() {
             </a>
           </div>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-            <a href="#about" className="text-lg ml-4 hover:text-purple-100 font-semibold">About</a>
+            <a href="#about" className="text-lg ml-4 font-semibold">About</a>
           </button>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-            <a href="#features" className="text-lg ml-4 hover:text-purple-100 font-semibold">Features</a>
+            <a href="#features" className="text-lg ml-4 font-semibold">Features</a>
           </button>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-            <a href="#roadmap" className="text-lg ml-4 hover:text-purple-100 font-semibold">Roadmap</a>
+            <a href="#roadmap" className="text-lg ml-4 font-semibold">Roadmap</a>
           </button>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-            <a href="#tokenomics" className="text-lg ml-4 hover:text-purple-100 font-semibold">Tokenomics</a>
+            <a href="#tokenomics" className="text-lg ml-4 font-semibold">Tokenomics</a>
           </button>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-            <a href="#faqs" className="text-lg ml-4 hover:text-purple-100 font-semibold">FAQ's</a>
+            <a href="#faqs" className="text-lg ml-4 font-semibold">FAQ's</a>
           </button>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-            <a href="/" className="text-lg ml-4 hover:text-purple-100 font-semibold">Contact</a>
+            <a href="/" className="text-lg ml-4 font-semibold">Contact</a>
           </button>
         </div> : null
       }
