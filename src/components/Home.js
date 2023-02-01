@@ -454,7 +454,7 @@ export default function Home() {
 
                         <div className="mt-6 sm:mt-0 sm:mb-12">
                             <div className="flex flex-col sm:flex-row items-center">
-                                <div className="flex justify-end items-center">
+                                <div className="lg:ml-52">
                                     <div className="w-full sm:w-72 sm:mr-8 p-5 bg-gray-100 rounded-2xl shadow space-y-5">
                                         <p className="text-gray-50 text-sm">
                                             April 15, 2023
@@ -462,7 +462,7 @@ export default function Home() {
                                         <h4 className="text-2xl font-semibold">
                                             Concept
                                         </h4>
-                                        <ul className="list-disc ml-5 text-lg">
+                                        <ul className="list-disc ml-5 text-lg font-medium">
                                             <li>Concept Generation</li>
                                             <li>
                                                 Team Assemble
@@ -470,6 +470,11 @@ export default function Home() {
                                         </ul>
                                     </div>
                                 </div>
+
+                                <div className="absolute border-b-2 border-seagreen-200 right-1/2 mr-4 px-3 w-8">
+
+                                </div>
+
                                 <div className="absolute left-1/2 -ml-1">
                                     <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle opacity="0.2" cx="20.9766" cy="20.0002" r="20" transform="rotate(90 20.9766 20.0002)" fill="#2E72D2" className='animate-pulse' />
@@ -481,7 +486,7 @@ export default function Home() {
 
                         <div className="mt-6 sm:mt-0 sm:mb-12">
                             <div className="flex flex-col sm:flex-row items-center">
-                                <div className="flex justify-end w-full mx-auto items-center">
+                                <div className="flex justify-end w-full mx-auto items-center lg:mr-36">
                                     <div className="w-full sm:w-72 sm:mr-8 p-5 bg-gray-100 rounded-2xl shadow space-y-5">
                                         <p className="text-gray-50 text-sm">
                                             April 15, 2023
@@ -489,7 +494,7 @@ export default function Home() {
                                         <h4 className="text-2xl font-semibold">
                                             Concept
                                         </h4>
-                                        <ul className="list-disc ml-5 text-lg">
+                                        <ul className="list-disc ml-5 text-lg font-medium">
                                             <li>Concept Generation</li>
                                             <li>
                                                 Team Assemble
@@ -497,6 +502,11 @@ export default function Home() {
                                         </ul>
                                     </div>
                                 </div>
+
+                                <div className="absolute border-b-2 border-seagreen-200 left-1/2 ml-12 px-3 w-8">
+
+                                </div>
+
                                 <div className="absolute left-1/2 -ml-1">
                                     <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle opacity="0.2" cx="20.9766" cy="20.0002" r="20" transform="rotate(90 20.9766 20.0002)" fill="#2E72D2" className='animate-pulse' />
@@ -508,7 +518,7 @@ export default function Home() {
 
                         <div className="mt-6 sm:mt-0 sm:mb-12">
                             <div className="flex flex-col sm:flex-row items-center">
-                                <div className="flex justify-start w-full mx-auto items-center">
+                                <div className="flex justify-start w-full mx-auto items-center lg:ml-52">
                                     <div className="w-full sm:w-72 sm:mr-8 p-5 bg-gray-100 rounded-2xl shadow space-y-5">
                                         <p className="text-gray-50 text-sm">
                                             April 15, 2023
@@ -516,7 +526,7 @@ export default function Home() {
                                         <h4 className="text-2xl font-semibold">
                                             Concept
                                         </h4>
-                                        <ul className="list-disc ml-5 text-lg">
+                                        <ul className="list-disc ml-5 text-lg font-medium">
                                             <li>Concept Generation</li>
                                             <li>
                                                 Team Assemble
@@ -524,6 +534,11 @@ export default function Home() {
                                         </ul>
                                     </div>
                                 </div>
+
+                                <div className="absolute border-b-2 border-seagreen-200 right-1/2 mr-4 px-3 w-8">
+
+                                </div>
+
                                 <div className="absolute left-1/2 -ml-1">
                                     <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle opacity="0.2" cx="20.9766" cy="20.0002" r="20" transform="rotate(90 20.9766 20.0002)" fill="#2E72D2" className='animate-pulse' />
@@ -535,7 +550,7 @@ export default function Home() {
 
                         <div className="mt-6 sm:mt-0">
                             <div className="flex flex-col sm:flex-row items-center">
-                                <div className="flex justify-end w-full mx-auto items-center">
+                                <div className="flex justify-end w-full mx-auto items-center lg:mr-36">
                                     <div className="w-full sm:w-72 sm:mr-8 p-5 bg-gray-100 rounded-2xl shadow space-y-5">
                                         <p className="text-gray-50 text-sm">
                                             April 15, 2023
@@ -543,7 +558,7 @@ export default function Home() {
                                         <h4 className="text-2xl font-semibold">
                                             Concept
                                         </h4>
-                                        <ul className="list-disc ml-5 text-lg">
+                                        <ul className="list-disc ml-5 text-lg font-medium">
                                             <li>Concept Generation</li>
                                             <li>
                                                 Team Assemble
@@ -551,6 +566,11 @@ export default function Home() {
                                         </ul>
                                     </div>
                                 </div>
+
+                                <div className="absolute border-b-2 border-seagreen-200 left-1/2 ml-12 px-3 w-8">
+
+                                </div>
+
                                 <div className="absolute left-1/2 -ml-1">
                                     <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle opacity="0.2" cx="20.9766" cy="20.0002" r="20" transform="rotate(90 20.9766 20.0002)" fill="#2E72D2" className='animate-pulse' />
