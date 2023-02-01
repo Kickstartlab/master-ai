@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Footer from './Footer'
 import Menu from './Menu'
 import f_1 from '../assets/f_1.png';
@@ -19,7 +19,8 @@ import shibai from '../assets/shibai.png';
 import roadmap from '../assets/roadmap.png';
 import Accordion from './Accordion';
 import Typed from "react-typed";
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 export default function Home() {
@@ -46,35 +47,44 @@ export default function Home() {
         }
     ];
 
+    useEffect(() => {
+        Aos.init({
+            duration: 3000,
+            once: true,
+            delay: 50,
+        });
+        Aos.refresh();
+    }, [])
+
     return (
-        <div className="bg-blue-100 text-white-100 font-poppins">
+        <div className="bg-blue-100 text-white-100 font-poppins overflow-hidden">
 
             {/* top section */}
 
             <div className="bg-top">
 
-                <div className="lg:px-8 px-5 container mx-auto">
+                <div className="lg:px-8 px-5 container mx-auto relative z-20">
                     <Menu />
 
                     <div className="flex flex-col items-center justify-center lg:py-20">
-                        <img src={shibai} alt="" className='' />
+                        <img data-aos="fade-down" src={shibai} alt="" className='' />
 
-                        <h2 className='md:text-5xl text-center text-2xl lg:w-9/12 py-6 font-poppins font-bold text-white-100'>
+                        <h2 data-aos="fade-up" data-aos-delay="100" className='md:text-5xl text-center text-2xl lg:w-9/12 py-6 font-poppins font-bold text-white-100'>
+                            L
                             <Typed
                                 strings={[
-                                    ' Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                                    'orem ipsum dolor sit amet, consectetur adipiscing elit.'
                                 ]}
-                                typeSpeed={80}
+                                typeSpeed={50}
                                 cursorChar={''}
-                                loop
                             />
                         </h2>
 
-                        <p className="text-lg mt-8 lg:w-1/2 text-white-50 text-center font-inter">
+                        <p data-aos="fade-up" className="text-lg mt-8 lg:w-1/2 text-white-50 text-center font-inter">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
                         </p>
 
-                        <a href='/' className="py-8 font-poppins">
+                        <a data-aos="fade-up" href='/' className="py-8 font-poppins">
                             <button className="rounded-md bg-gradient text-white-100 font-semibold px-5 py-3">
                                 GET ACCESS
                             </button>
@@ -91,15 +101,15 @@ export default function Home() {
                 <div className="lg:pb-20 py-5 lg:px-20 px-5 container mx-auto">
 
                     <div className="flex flex-col items-center justify-center pt-12">
-
                         <h2 className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
+                            W
                             <Typed
                                 strings={[
-                                    '  What is Master AI?'
+                                    'hat is Master AI?'
                                 ]}
                                 typeSpeed={100}
                                 cursorChar={''}
-                                // loop
+                                loop
                             />
                         </h2>
                         <p className="py-6 font-inter text-gray-50 lg:w-8/12 w-full text-center">
@@ -109,7 +119,7 @@ export default function Home() {
                         <div className="lg:flex block space-y-5 items-baseline py-8 justify-center gap-16">
 
                             <div className="flex flex-col gap-y-5 items-center justify-center">
-                                <img src={choose_1} alt="" />
+                                <img data-aos="zoom-in" data-aos-delay="100" src={choose_1} alt="" />
                                 <div className='text-center font-inter '>
                                     <h4 className="text-white-100 text-xl pb-5 font-semibold">
                                         Loram Ipsum
@@ -122,7 +132,7 @@ export default function Home() {
                             </div>
 
                             <div className="flex flex-col gap-y-5 items-center justify-center">
-                                <img src={choose_2} alt="" />
+                                <img data-aos="zoom-in" data-aos-delay="100" src={choose_2} alt="" />
                                 <div className='text-center font-inter '>
                                     <h4 className="text-white-100 text-xl pb-5 font-semibold">
                                         Loram Ipsum
@@ -135,7 +145,7 @@ export default function Home() {
                             </div>
 
                             <div className="flex flex-col gap-y-5 items-center justify-center">
-                                <img src={choose_3} alt="" />
+                                <img data-aos="zoom-in" data-aos-delay="100" src={choose_3} alt="" />
                                 <div className='text-center font-inter '>
                                     <h4 className="text-white-100 text-xl pb-5 font-semibold">
                                         Loram Ipsum
@@ -162,13 +172,13 @@ export default function Home() {
                 <div id='features' className="lg:py-12 py-5 lg:px-20 px-5 container mx-auto">
 
                     <div className="flex flex-col items-center justify-center pt-12 transform">
-
-                        <h2 className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
+                        <h2 data-aos="fade-up" className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
+                            W
                             <Typed
                                 strings={[
-                                    'Why choose our Token?'
+                                    'hy choose our Token?'
                                 ]}
-                                typeSpeed={80}
+                                typeSpeed={50}
                                 cursorChar={''}
                                 loop
                             />
@@ -179,7 +189,7 @@ export default function Home() {
 
                         <div className="lg:flex block space-y-5 items-baseline mt-8 justify-between gap-5">
 
-                            <div className="flex flex-col gap-y-5 items-center justify-center rounded-xl px-5 pb-6 bg-gray-100">
+                            <div data-aos="flip-up" data-aos-duration="3500" data-aos-delay="150" data-aos-once="false" className="flex flex-col gap-y-5 items-center justify-center rounded-xl px-5 pb-6 bg-gray-100">
                                 <img src={f_1} alt="" className='lg:-mt-12' />
                                 <div className='text-center flex flex-col items-center justify-center font-inter gap-y-6'>
                                     <h4 className="text-white-100 text-xl font-semibold">
@@ -201,7 +211,7 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col gap-y-5 items-center justify-center rounded-xl px-5 pb-6 bg-gray-100">
+                            <div data-aos="flip-down" data-aos-duration="3500" data-aos-delay="150" data-aos-once="false" className="flex flex-col gap-y-5 items-center justify-center rounded-xl px-5 pb-6 bg-gray-100">
                                 <img src={f_2} alt="" className='lg:-mt-12' />
                                 <div className='text-center flex flex-col items-center justify-center font-inter gap-y-6'>
                                     <h4 className="text-white-100 text-xl font-semibold">
@@ -223,7 +233,7 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col gap-y-5 items-center justify-center rounded-xl px-5 pb-6 bg-gray-100">
+                            <div data-aos="flip-up" data-aos-duration="3500" data-aos-delay="150" data-aos-once="false" className="flex flex-col gap-y-5 items-center justify-center rounded-xl px-5 pb-6 bg-gray-100">
                                 <img src={f_3} alt="" className='lg:-mt-12' />
                                 <div className='text-center flex flex-col items-center justify-center font-inter gap-y-6'>
                                     <h4 className="text-white-100 text-xl font-semibold">
@@ -245,7 +255,7 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col gap-y-5 items-center justify-center rounded-xl px-5 pb-6 bg-gray-100">
+                            <div data-aos="flip-down" data-aos-duration="3500" data-aos-delay="150" data-aos-once="false" className="flex flex-col gap-y-5 items-center justify-center rounded-xl px-5 pb-6 bg-gray-100">
                                 <img src={f_4} alt="" className='lg:-mt-12' />
                                 <div className='text-center flex flex-col items-center justify-center font-inter gap-y-6'>
                                     <h4 className="text-white-100 text-xl font-semibold">
@@ -281,12 +291,13 @@ export default function Home() {
 
                 <div className="lg:py-12 py-5 lg:px-20 px-5 container mx-auto bg-project">
 
-                    <h2 className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
+                    <h2 data-aos="fade-up" className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
+                        T
                         <Typed
                             strings={[
-                                'Tokenomics'
+                                'okenomics'
                             ]}
-                            typeSpeed={80}
+                            typeSpeed={50}
                             cursorChar={''}
                             loop
                         />
@@ -301,11 +312,12 @@ export default function Home() {
                             <div className="">
 
                                 <h2 className='md:text-4xl mb-6 text-center text-2xl font-poppins font-bold text-white-100'>
+                                    D
                                     <Typed
                                         strings={[
-                                            'Distribution'
+                                            'istribution'
                                         ]}
-                                        typeSpeed={80}
+                                        typeSpeed={50}
                                         cursorChar={''}
                                         loop
                                     />
@@ -416,12 +428,13 @@ export default function Home() {
 
             <div id='roadmap' className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto text-white-100">
 
-                <h2 className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
+                <h2 data-aos="fade-up" className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
+                    R
                     <Typed
                         strings={[
-                            'Road map'
+                            'oad map'
                         ]}
-                        typeSpeed={80}
+                        typeSpeed={50}
                         cursorChar={''}
                         loop
                     />
@@ -442,12 +455,13 @@ export default function Home() {
                 <div className="container mx-auto bg-gray-100 rounded-2xl">
                     <div className="flex flex-col items-center lg:px-12 px-6 justify-cente gap-y-8 text-center lg:py-16 py-6">
 
-                        <h2 className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
+                        <h2 data-aos="fade-up" className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
+                            S
                             <Typed
                                 strings={[
-                                    'Strategic Partners'
+                                    'trategic Partners'
                                 ]}
-                                typeSpeed={80}
+                                typeSpeed={50}
                                 cursorChar={''}
                                 loop
                             />
@@ -475,12 +489,13 @@ export default function Home() {
 
             <div id='faqs' className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto text-white-100">
 
-                <h2 className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
+                <h2 data-aos="fade-up" className='md:text-5xl text-center text-2xl font-poppins font-bold text-white-100'>
+                    H
                     <Typed
                         strings={[
-                            'Have any Question?'
+                            'ave any Question?'
                         ]}
-                        typeSpeed={80}
+                        typeSpeed={50}
                         cursorChar={''}
                         loop
                     />
