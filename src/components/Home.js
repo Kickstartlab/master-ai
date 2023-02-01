@@ -21,6 +21,7 @@ import Accordion from './Accordion';
 import Typed from "react-typed";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+// import Particle from './Particle';
 
 
 export default function Home() {
@@ -66,6 +67,7 @@ export default function Home() {
                 <div className="lg:px-8 px-5 container mx-auto relative z-20">
                     <Menu />
 
+                    {/* <Particle /> */}
                     <div className="flex flex-col items-center justify-center lg:py-20">
                         <img data-aos="fade-down" src={shibai} alt="" className='' />
 
@@ -203,8 +205,8 @@ export default function Home() {
                                     <button className="flex gap-2 items-center font-semibold">
                                         See details
 
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                                         </svg>
 
                                     </button>
@@ -225,8 +227,8 @@ export default function Home() {
                                     <button className="flex gap-2 items-center font-semibold">
                                         See details
 
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                                         </svg>
 
                                     </button>
@@ -247,8 +249,8 @@ export default function Home() {
                                     <button className="flex gap-2 items-center font-semibold">
                                         See details
 
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                                         </svg>
 
                                     </button>
@@ -269,8 +271,8 @@ export default function Home() {
                                     <button className="flex gap-2 items-center font-semibold">
                                         See details
 
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                                         </svg>
 
                                     </button>
@@ -444,7 +446,121 @@ export default function Home() {
                 </p>
 
                 <div className="py-8">
-                    <img src={roadmap} alt="" className='flex mx-auto' />
+                    {/* <img src={roadmap} alt="" className='flex mx-auto' /> */}
+
+                    <div className="relative text-white-100 font-inter text-sm font-semibold">
+
+                        <div className="hidden sm:block w-1 ml-3.5 bg-seagreen-200 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+
+                        <div className="mt-6 sm:mt-0 sm:mb-12">
+                            <div className="flex flex-col sm:flex-row items-center">
+                                <div className="flex justify-end items-center">
+                                    <div className="w-full sm:w-72 sm:mr-8 p-5 bg-gray-100 rounded-2xl shadow space-y-5">
+                                        <p className="text-gray-50 text-sm">
+                                            April 15, 2023
+                                        </p>
+                                        <h4 className="text-2xl font-semibold">
+                                            Concept
+                                        </h4>
+                                        <ul className="list-disc ml-5 text-lg">
+                                            <li>Concept Generation</li>
+                                            <li>
+                                                Team Assemble
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="absolute left-1/2 -ml-1">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle opacity="0.2" cx="20.9766" cy="20.0002" r="20" transform="rotate(90 20.9766 20.0002)" fill="#2E72D2" className='animate-pulse' />
+                                        <circle cx="20.9766" cy="20.0002" r="12" transform="rotate(90 20.9766 20.0002)" fill="#2E72D2" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="mt-6 sm:mt-0 sm:mb-12">
+                            <div className="flex flex-col sm:flex-row items-center">
+                                <div className="flex justify-end w-full mx-auto items-center">
+                                    <div className="w-full sm:w-72 sm:mr-8 p-5 bg-gray-100 rounded-2xl shadow space-y-5">
+                                        <p className="text-gray-50 text-sm">
+                                            April 15, 2023
+                                        </p>
+                                        <h4 className="text-2xl font-semibold">
+                                            Concept
+                                        </h4>
+                                        <ul className="list-disc ml-5 text-lg">
+                                            <li>Concept Generation</li>
+                                            <li>
+                                                Team Assemble
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="absolute left-1/2 -ml-1">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle opacity="0.2" cx="20.9766" cy="20.0002" r="20" transform="rotate(90 20.9766 20.0002)" fill="#2E72D2" className='animate-pulse' />
+                                        <circle cx="20.9766" cy="20.0002" r="12" transform="rotate(90 20.9766 20.0002)" fill="#2E72D2" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="mt-6 sm:mt-0 sm:mb-12">
+                            <div className="flex flex-col sm:flex-row items-center">
+                                <div className="flex justify-start w-full mx-auto items-center">
+                                    <div className="w-full sm:w-72 sm:mr-8 p-5 bg-gray-100 rounded-2xl shadow space-y-5">
+                                        <p className="text-gray-50 text-sm">
+                                            April 15, 2023
+                                        </p>
+                                        <h4 className="text-2xl font-semibold">
+                                            Concept
+                                        </h4>
+                                        <ul className="list-disc ml-5 text-lg">
+                                            <li>Concept Generation</li>
+                                            <li>
+                                                Team Assemble
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="absolute left-1/2 -ml-1">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle opacity="0.2" cx="20.9766" cy="20.0002" r="20" transform="rotate(90 20.9766 20.0002)" fill="#2E72D2" className='animate-pulse' />
+                                        <circle cx="20.9766" cy="20.0002" r="12" transform="rotate(90 20.9766 20.0002)" fill="#2E72D2" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="mt-6 sm:mt-0">
+                            <div className="flex flex-col sm:flex-row items-center">
+                                <div className="flex justify-end w-full mx-auto items-center">
+                                    <div className="w-full sm:w-72 sm:mr-8 p-5 bg-gray-100 rounded-2xl shadow space-y-5">
+                                        <p className="text-gray-50 text-sm">
+                                            April 15, 2023
+                                        </p>
+                                        <h4 className="text-2xl font-semibold">
+                                            Concept
+                                        </h4>
+                                        <ul className="list-disc ml-5 text-lg">
+                                            <li>Concept Generation</li>
+                                            <li>
+                                                Team Assemble
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="absolute left-1/2 -ml-1">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle opacity="0.2" cx="20.9766" cy="20.0002" r="20" transform="rotate(90 20.9766 20.0002)" fill="#2E72D2" className='animate-pulse' />
+                                        <circle cx="20.9766" cy="20.0002" r="12" transform="rotate(90 20.9766 20.0002)" fill="#2E72D2" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
