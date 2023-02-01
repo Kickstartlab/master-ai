@@ -45,7 +45,7 @@ export default function Footer() {
 
               <div className="">
                 <div className="mb-3">
-                  <label for="f-name" className="text-white-100 font-poppins text-xl font-semibold">
+                  <label htmlFor="f-name" className="text-white-100 font-poppins text-xl font-semibold">
                     Your Name
                   </label>
                 </div>
@@ -54,7 +54,7 @@ export default function Footer() {
 
               <div className="w-full sm:mt-0 mt-5">
                 <div className="mb-3">
-                  <label for="date" className="text-white-100 font-poppins text-xl font-semibold">
+                  <label htmlFor="date" className="text-white-100 font-poppins text-xl font-semibold">
                     Your Email
                   </label>
                 </div>
@@ -65,7 +65,7 @@ export default function Footer() {
 
             <div className="mt-5">
               <div className="mb-3">
-                <label for="message" className="text-white-100 font-poppins text-xl font-semibold">
+                <label htmlFor="message" className="text-white-100 font-poppins text-xl font-semibold">
                   Your Message
                 </label>
               </div>
