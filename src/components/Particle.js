@@ -1,88 +1,19 @@
-import React from 'react'
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import React from "react";
+import { useState } from "react";
+import bg_top from '../assets/bg-top.png';
+import "animate.css/animate.min.css";
 
 function Particle() {
+  const [isAnimated, setAnimated] = useState(false);
 
-    const particlesInit = async (main) => {
-        console.log(main);
-
-        // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
-        await loadFull(main);
-    };
-
-    return (
-        <div>
-            <Particles
-                params={{
-                    "fps_limit": 28,
-                    "particles": {
-                        "collisions": {
-                            "enable": false
-                        },
-                        "number": {
-                            "value": 200,
-                            "density": {
-                                "enable": false
-                            }
-                        },
-                        "line_linked": {
-                            "enable": true,
-                            "distance": 30,
-                            "opacity": 0.4
-                        },
-                        "move": {
-                            "speed": 1
-                        },
-                        "opacity": {
-                            "anim": {
-                                "enable": true,
-                                "opacity_min": 0.05,
-                                "speed": 1,
-                                "sync": false
-                            },
-                            "value": 0.4
-                        }
-                    },
-                    "polygon": {
-                        "enable": true,
-                        "scale": 0.5,
-                        "type": "inline",
-                        "move": {
-                            "radius": 10
-                        },
-                        "url": "/small-deer.2a0425af.svg",
-                        "inline": {
-                            "arrangement": "equidistant"
-                        },
-                        "draw": {
-                            "enable": true,
-                            "stroke": {
-                                "color": "rgba(255, 255, 255, .2)"
-                            }
-                        }
-                    },
-                    "retina_detect": false,
-                    "interactivity": {
-                        "events": {
-                            "onhover": {
-                                "enable": true,
-                                "mode": "bubble"
-                            }
-                        },
-                        "modes": {
-                            "bubble": {
-                                "size": 6,
-                                "distance": 40
-                            }
-                        }
-                    }
-                }} />
-
-        </div>
-    )
+  return (
+    <div
+      onClick={() => setAnimated(!isAnimated)}
+      className={`wave-animation ${isAnimated ? "animated" : ""}`}
+    >
+      <img src={bg_top} alt="Animated PNG" />
+    </div>
+  );
 }
 
-export default Particle
+export default Particle;

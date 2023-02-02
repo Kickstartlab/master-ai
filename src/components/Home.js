@@ -16,12 +16,11 @@ import b_5 from '../assets/b_5.png';
 import b_6 from '../assets/b_6.png';
 import about from '../assets/about.png';
 import shibai from '../assets/shibai.png';
-import roadmap from '../assets/roadmap.png';
 import Accordion from './Accordion';
 import Typed from "react-typed";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-// import Particle from './Particle';
+// import ThreeJSScene from './ThreeJSScene';
 
 
 export default function Home() {
@@ -62,12 +61,16 @@ export default function Home() {
 
             {/* top section */}
 
-            <div className="bg-top">
-
+            <div className="">
+                <div class="ocean">
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
                 <div className="lg:px-8 px-5 container mx-auto relative z-20">
                     <Menu />
 
-                    {/* <Particle /> */}
+                    {/* <ThreeJSScene /> */}
                     <div className="flex flex-col items-center justify-center lg:py-20">
                         <img data-aos="fade-down" src={shibai} alt="" className='' />
 
@@ -446,11 +449,10 @@ export default function Home() {
                 </p>
 
                 <div className="py-8">
-                    {/* <img src={roadmap} alt="" className='flex mx-auto' /> */}
 
                     <div className="relative text-white-100 font-inter text-sm font-semibold">
 
-                        <div className="hidden lg:block w-1 ml-3.5 bg-seagreen-200 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+                        <div className="hidden lg:block w-1 ml-3.5 bg-seagreen-200 absolute h-full left-1/2 transform -translate-x-1/2 line"></div>
 
                         <div className="mt-6 sm:mt-0 sm:mb-12">
                             <div className="flex flex-col sm:flex-row items-center">
