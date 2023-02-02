@@ -20,7 +20,6 @@ import Accordion from './Accordion';
 import Typed from "react-typed";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-// import ThreeJSScene from './ThreeJSScene';
 
 
 export default function Home() {
@@ -70,7 +69,6 @@ export default function Home() {
                 <div className="lg:px-8 px-5 container mx-auto relative z-20">
                     <Menu />
 
-                    {/* <ThreeJSScene /> */}
                     <div className="flex flex-col items-center justify-center lg:py-20">
                         <img data-aos="fade-down" src={shibai} alt="" className='' />
 
